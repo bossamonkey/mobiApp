@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <title>mObi</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="topbar">
+                <a id="navBtn" class="back btn" href="index.html"></a>
+                <div id="appTitle">mObi</div>
+            </div>
+            <div id="menu">
+                <a href="index.html" class="item navigate">Navigate</a>
+                <a href="index.html" class="item manual">Manual Drive</a>
+                <a href="index.html" class="item training">Training</a>
+                <a href="index.html" class="item settings">Settings</a>
+            </div>
+            <div id="pathsPanel" class="collapsed">
+                <div class="body">
+                    <iframe src="paths.html" id="pathsFrame"></iframe>
+                </div>
+                <div class="tab">PATHS</div>
+            </div>
+            <div id="content" class="navigate">
+                <div class="innerContent">
+                    <h1>NAVIGATE</h1>
+                    <div class="pathList">
+                        <div class="pathLabel">
+                            <div class="progress progress1"></div>
+                            <div class="start">Kitchen</div>
+                            <div class="end">Dining Room</div>
+                        </div>
+                    </div>
+                    <div class="navigateActions unfinished">
+                        <div class="label">Time Left: <span id="timeLeft">00:21</span></div>
+                        <div class="finishingActions">
+                            <a href="showNavigateRouteSingle.html"><div class="btn yellow">PAUSE</div></a>
+<!--                             <a href="showNavigateRoute.html"><div class="btn ltgray">CANCEL</div></a> -->
+                        </div>
+                    </div>
+                    <div class="navigateActions finished">
+                        <div class="label finished">NAVIGATION FINISHED</div>
+                        <div class="finishingActions">
+                            <a href="index.html"><div class="btn">BACK</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--                 <div class="centerWrapper">
+                    <a href="newpath.html" class="btn newPath">+ NEW PATH</a>
+                </div>
+                <div class="titleRow">
+                    <div class="pageTitle">RECORDED PATHS</div>
+                    <div class="sort">
+                        <div class="label">SORT BY</div>
+                        <div class="selector">RECENT</div>
+                        <div id="sortSelectionBox">
+                            <div class="item recent">RECENT</div>
+                            <div class="item frequent">FREQUENT</div>
+                            <div class="item alpha">ALPHABETICAL</div>
+                            <div class="item new">NEWLY ADDED</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pathList">
+                    <a href="path.html">
+                        <div class="pathLabel">
+                            <div class="start">Living Room</div>
+                            <div class="end">Kitchen</div>
+                        </div>
+                    </a>
+                    <a href="path.html">
+                        <div class="pathLabel">
+                            <div class="start">Kitchen</div>
+                            <div class="end">Living Room</div>
+                        </div>
+                    </a>
+                    <a href="path.html">
+                        <div class="pathLabel">
+                            <div class="start">Master Bed</div>
+                            <div class="end">Living Room</div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div id="statusBar">
+                <div class="barTitle">MOBI STATUS</div>
+                <div class="battery">56%</div>
+                <div class="status moving"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
+        <script type="text/javascript" src="./js/navigatingSingle.js"></script>
+    </body>
+</html>
