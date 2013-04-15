@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <link rel="stylesheet" type="text/css" href="./css/map.css" />
+        <title>mObi</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="topbar">
+                <a id="navBtn" class="menu btn"></a>
+                <div id="appTitle">mObi</div>
+            </div>
+            <div id="menu">
+                <a href="index.html" class="item navigate">Navigate</a>
+                <a href="map.html" class="item navigate">Map</a>
+                <a href="manual.html" class="item manual">Manual Drive</a>
+                <a href="training.html" class="item training">Training</a>
+                <a href="settings.html" class="item settings">Settings</a>
+            </div>
+            <div id="pathsPanel" class="collapsed">
+                <div class="body">
+                    <iframe src="paths.html" id="pathsFrame"></iframe>
+                </div>
+                <div class="tab">PATHS</div>
+            </div>
+            <div id="content" class="navigate">
+                
+                <form id="room_number" action="javascript:createBoxes()">
+                    Number of rooms:
+                    <select id="number">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <input id="submitButton" name="Submit"  type="submit" value="Add Listing" class="btn"/>
+                </form>
+                <div id="draggable_area">
+                </div>
+                <div id="lightbox">
+                    <form id="room_name" action="javascript:nameRoom()">
+                        Room Name: <input id="new_name" type="text" name="name" autofocus><br>
+                        <input id="submitName" name="Name"  type="submit"/>
+                    </form>
+                </div>
+            </div>
+            <div id="statusBar">
+                <div class="barTitle">MOBI STATUS</div>
+                <div class="battery">56%</div>
+                <div class="status idle"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+        <script src="./js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="./js/map.js"></script>
+    </body>
+</html>
