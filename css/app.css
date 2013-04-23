@@ -596,3 +596,7 @@ h1{
 #timeLeft{
   font-weight: bold;
 }
+
+.setupText {
+  font-size: 16pt;
+}
