@@ -168,6 +168,10 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
   box-shadow: 0 2px 2px rgba(0,0,0,.27); 
 }
 
+.btn a, .btn a:visited, .btn a:hover, .btn a:active{
+  color: #fff;
+}
+
 .btn.green{
   border: solid 1px #137a09;
   background-color: #5dc752;
@@ -186,6 +190,13 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
 .btn.yellow{
   border: solid 1px #ad9005;
   background-color: #dbbe33;
+}
+
+.btn.skip{
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
 }
 
 #navBtn{
@@ -599,4 +610,7 @@ h1{
 
 .setupText {
   font-size: 16pt;
+}
+.setupText.loading{
+  text-align: center;
 }
