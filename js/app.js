@@ -121,4 +121,31 @@ function run(){
         
 
     // }
+
+
+    // BIND LOOP
+    var loopOn = false;
+    $("#loop").bind("click", function(){
+        toggleLoop();
+    });
+    $("#loop").live("touch", function(){
+        toggleLoop();
+    });
+
+    function toggleLoop(){
+        loopOn = !loopOn;
+        if (loopOn){
+            $("#loop").addClass("on");
+            $("#loop p").html("LOOP ON");
+            $(".pathLabel").addClass("loop");
+            $(".navigateActions .label").hide();
+        }
+        else{
+            $("#loop").removeClass("on");
+            $("#loop p").html("LOOP OFF");
+            $(".pathLabel").removeClass("loop");
+            $(".navigateActions .label").show();
+        } 
+    }
+
 }

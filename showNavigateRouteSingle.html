@@ -12,17 +12,17 @@
             </div>
             <div id="menu">
                 <a href="index.html" class="item navigate">Navigate</a>
-                <a href="map.html" class="item navigate">Map</a>
                 <a href="manual.html" class="item manual">Manual Drive</a>
-                <a href="training.html" class="item training">Training</a>
-                <a href="settings.html" class="item settings">Settings</a>
+                <a href="setupStep1.html" class="item training">Tutorial</a>
+                <a href="paths.html" class="item path">Path Settings</a>
+                <a href="preferences.html" class="item settings">Preferences</a>
             </div>
-            <div id="pathsPanel" class="collapsed">
+            <!-- <div id="pathsPanel" class="collapsed">
                 <div class="body">
                     <iframe src="paths.html" id="pathsFrame"></iframe>
                 </div>
                 <div class="tab">PATHS</div>
-            </div>
+            </div> -->
             <div id="content" class="navigate">
                 <div class="innerContent">
                     <h1>NAVIGATE</h1>
@@ -30,54 +30,29 @@
                         <div class="pathLabel">
                             <div class="progress progress1"></div>
                             <div class="start">Kitchen</div>
-                            <div class="end">Dining Room</div>
+                            <div class="end">Den</div>
                         </div>
+<!--                         <div class="pathLabel">
+                            <div class="progress progress2"></div>
+                            <div class="start">Den</div>
+                            <div class="end">Living Room</div>
+                        </div> -->
                     </div>
-                    <div class="navigateActions">
+                    <div class="navigateActions unfinished">
                         <div class="label">Total Length: <span id="timeLeft">00:21</span></div>
                         <div class="finishingActions">
-                            <a href="navigateRouteSingle.html"><div class="btn green">GO</div></a>
+                            <a id="navigateGo"><div class="btn green">GO</div></a>
+                            <a id="navigatePause"><div class="btn yellow">PAUSE</div></a>
+                        </div>
+                        <div id="loop">
+                        <div class="loopBtn"></div>
+                            <p>LOOP OFF</p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-<!--                 <div class="centerWrapper">
-                    <a href="newpath.html" class="btn newPath">+ NEW PATH</a>
-                </div>
-                <div class="titleRow">
-                    <div class="pageTitle">RECORDED PATHS</div>
-                    <div class="sort">
-                        <div class="label">SORT BY</div>
-                        <div class="selector">RECENT</div>
-                        <div id="sortSelectionBox">
-                            <div class="item recent">RECENT</div>
-                            <div class="item frequent">FREQUENT</div>
-                            <div class="item alpha">ALPHABETICAL</div>
-                            <div class="item new">NEWLY ADDED</div>
-                        </div>
+                    <div class="navigateActions finished">
+                        <div class="label finished">NAVIGATION FINISHED</div>
                     </div>
                 </div>
-                <div id="pathList">
-                    <a href="path.html">
-                        <div class="pathLabel">
-                            <div class="start">Living Room</div>
-                            <div class="end">Kitchen</div>
-                        </div>
-                    </a>
-                    <a href="path.html">
-                        <div class="pathLabel">
-                            <div class="start">Kitchen</div>
-                            <div class="end">Living Room</div>
-                        </div>
-                    </a>
-                    <a href="path.html">
-                        <div class="pathLabel">
-                            <div class="start">Master Bed</div>
-                            <div class="end">Living Room</div>
-                        </div>
-                    </a>
-                </div> -->
             </div>
             <div id="statusBar">
                 <div class="barTitle">MOBI STATUS</div>
@@ -87,5 +62,6 @@
         </div>
         <script type="text/javascript" src="./js/jquery.min.js"></script>
         <script type="text/javascript" src="./js/app.js"></script>
+        <script type="text/javascript" src="./js/navigating.js"></script>
     </body>
 </html>

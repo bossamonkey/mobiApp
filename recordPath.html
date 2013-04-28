@@ -4,21 +4,49 @@
         <link rel="stylesheet" type="text/css" href="./css/app.css" />
         <title>mObi</title>
     </head>
-    <body class="pathsFrameInner">
-        <div class="titleRow">
-            <h1 class="pageTitle">RECORDING PATH</h1>
-        </div>
-        <div class="pathLabel double">
-            <div class="start">Kitchen</div>
-            <div class="end">Dining Room</div>
-        </div>
-        <div id="pushLabel">
-            Push mObi toward destination to record path.
-        </div>
-        <div id="timer">00:00</div>
-        <div class="finishingActions">
-            <a href="paths.html"><div class="btn" id="finishRecordBtn">FINISH</div></a>
-            <a href="paths.html"><div class="btn gray">CANCEL</div></a>
+    <body>
+        <div id="container">
+            <div id="topbar">
+                <a id="navBtn" class="back btn" href="newPath.html"></a>
+                <div id="appTitle">mObi</div>
+            </div>
+            <div id="menu">
+                <a href="index.html" class="item navigate">Navigate</a>
+                <a href="manual.html" class="item manual">Manual Drive</a>
+                <a href="setupStep1.html" class="item training">Tutorial</a>
+                <a href="paths.html" class="item path">Path Settings</a>
+                <a href="preferences.html" class="item settings">Preferences</a>
+            </div>
+<!--             <div id="pathsPanel" class="collapsed">
+                <div class="body">
+                    <iframe src="paths.html" id="pathsFrame"></iframe>
+                </div>
+                <div class="tab">PATHS</div>
+            </div> -->
+            <div id="content" class="navigate">
+                <div class="innerContent">
+                    <div class="titleRow">
+                        <h1 class="pageTitle">RECORDING PATH</h1>
+                    </div>
+                    <div class="pathLabel double">
+                        <div class="start">Kitchen</div>
+                        <div class="end">Dining Room</div>
+                    </div>
+                    <div id="pushLabel">
+                        <p>Push mObi toward destination to record path.</p>
+                        <div id="timer">00:00</div>
+                        <div class="finishingActions">
+                            <a href="paths.html"><div class="btn" id="finishRecordBtn">FINISH</div></a>
+                            <a href="paths.html"><div class="btn gray">CANCEL</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="statusBar">
+                <div class="barTitle">MOBI STATUS</div>
+                <div class="battery">56%</div>
+                <div class="status idle"></div>
+            </div>
         </div>
         <script type="text/javascript" src="./js/jquery.min.js"></script>
         <script type="text/javascript" src="./js/app.js"></script>

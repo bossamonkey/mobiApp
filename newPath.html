@@ -4,38 +4,66 @@
         <link rel="stylesheet" type="text/css" href="./css/app.css" />
         <title>mObi</title>
     </head>
-    <body class="pathsFrameInner">
-        <div class="titleRow">
-            <h1 class="pageTitle">RECORD NEW PATH</h1>
-        </div>
-        <div id="newPathForm">
-            <div class="controlGroup withHint">
-                <div class="label">BETWEEN</div>
-                <div class="hint">MOBI'S CURRENT LOCATION</div>
-                <div class="selector input">Kitchen</div>
-                <div id="newPathSelectionBox">
-                    <div class="item">Living Room</div>
-                    <div class="item">Bathroom</div>
-                    <div class="item">Bedroom</div>
-                    <div class="item">Den</div>
+    <body>
+        <div id="container">
+            <div id="topbar">
+                <a id="navBtn" class="back btn" href="paths.html"></a>
+                <div id="appTitle">mObi</div>
+            </div>
+            <div id="menu">
+                <a href="index.html" class="item navigate">Navigate</a>
+                <a href="manual.html" class="item manual">Manual Drive</a>
+                <a href="setupStep1.html" class="item training">Tutorial</a>
+                <a href="paths.html" class="item path">Path Settings</a>
+                <a href="preferences.html" class="item settings">Preferences</a>
+            </div>
+<!--             <div id="pathsPanel" class="collapsed">
+                <div class="body">
+                    <iframe src="paths.html" id="pathsFrame"></iframe>
+                </div>
+                <div class="tab">PATHS</div>
+            </div> -->
+            <div id="content" class="navigate">
+                <div class="innerContent">
+                    <div class="titleRow">
+                        <h1 class="pageTitle">RECORD NEW PATH</h1>
+                    </div>
+                    <div id="newPathForm">
+                        <div class="controlGroup withHint">
+                            <div class="label">BETWEEN</div>
+                            <div class="hint">MOBI'S CURRENT LOCATION</div>
+                            <div class="selector input">Kitchen</div>
+                            <div id="newPathSelectionBox">
+                                <div class="item">Living Room</div>
+                                <div class="item">Bathroom</div>
+                                <div class="item">Bedroom</div>
+                                <div class="item">Den</div>
+                            </div>
+                        </div>
+                        <div class="controlGroup">
+                            <div class="label">AND</div>
+                            <div class="input">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="existingLocs">
+                            <div class="label">CHOOSE FROM EXISTING LOCATIONS:</div>
+                            <div class="locsList">
+                                <div class="item">Living Room</div>
+                                <div class="item">Bedroom</div>
+                            </div>
+                        </div>
+                        <div class="finishingActions">
+                            <a href="recordPath.html"><div class="btn green" id="recordBtn">RECORD</div></a>
+                            <a href="paths.html"><div class="btn gray">CANCEL</div></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="controlGroup">
-                <div class="label">AND</div>
-                <div class="input">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="existingLocs">
-                <div class="label">CHOOSE FROM EXISTING LOCATIONS:</div>
-                <div class="locsList">
-                    <div class="item">Living Room</div>
-                    <div class="item">Bedroom</div>
-                </div>
-            </div>
-            <div class="finishingActions">
-                <a href="recordPath.html"><div class="btn green" id="recordBtn">RECORD</div></a>
-                <a href="paths.html"><div class="btn gray">CANCEL</div></a>
+            <div id="statusBar">
+                <div class="barTitle">MOBI STATUS</div>
+                <div class="battery">56%</div>
+                <div class="status idle"></div>
             </div>
         </div>
         <script type="text/javascript" src="./js/jquery.min.js"></script>

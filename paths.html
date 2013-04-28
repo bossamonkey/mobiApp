@@ -4,43 +4,71 @@
         <link rel="stylesheet" type="text/css" href="./css/app.css" />
         <title>mObi</title>
     </head>
-    <body class="pathsFrameInner">
-        <div class="titleRow">
-            <h1 class="pageTitle">RECORDED PATHS</h1>
-            <div class="actions">
-                <a href="newPath.html"><div class="btn">+ NEW PATH</div></a>
+    <body>
+        <div id="container">
+            <div id="topbar">
+                <a id="navBtn" class="menu btn"></a>
+                <div id="appTitle">mObi</div>
             </div>
-        </div>
-        <div class="pathList withEdit">
-            <div class="pathLabel">
-                <div class="locations">
-                    <div class="start">Living Room</div>
-                    <div class="end">Kitchen</div>
+            <div id="menu">
+                <a href="index.html" class="item navigate">Navigate</a>
+                <a href="manual.html" class="item manual">Manual Drive</a>
+                <a href="setupStep1.html" class="item training">Tutorial</a>
+                <a href="paths.html" class="item path">Path Settings</a>
+                <a href="preferences.html" class="item settings">Preferences</a>
+            </div>
+<!--             <div id="pathsPanel" class="collapsed">
+                <div class="body">
+                    <iframe src="paths.html" id="pathsFrame"></iframe>
                 </div>
-                <div class="actions">
-                    <div class="edit"></div>
-                    <div class="delete"></div>
+                <div class="tab">PATHS</div>
+            </div> -->
+            <div id="content" class="navigate">
+                <div class="innerContent">
+                    <div class="titleRow">
+                        <h1 class="pageTitle">RECORDED PATHS</h1>
+                        <div class="actions">
+                            <a href="newPath.html"><div class="btn">+ NEW PATH</div></a>
+                        </div>
+                    </div>
+                    <div class="pathList withEdit">
+                        <div class="pathLabel">
+                            <div class="locations">
+                                <div class="start">Living Room</div>
+                                <div class="end">Kitchen</div>
+                            </div>
+                            <div class="actions">
+                                <div class="edit"></div>
+                                <div class="delete"></div>
+                            </div>
+                        </div>
+                        <div class="pathLabel">
+                            <div class="locations">
+                                <div class="start">Living Room</div>
+                                <div class="end">Den</div>
+                            </div>
+                            <div class="actions">
+                                <div class="edit"></div>
+                                <div class="delete"></div>
+                            </div>
+                        </div>
+                        <div class="pathLabel">
+                            <div class="locations">
+                                <div class="start">Kitchen</div>
+                                <div class="end">Bedroom</div>
+                            </div>
+                            <div class="actions">
+                                <div class="edit"></div>
+                                <div class="delete"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="pathLabel">
-                <div class="locations">
-                    <div class="start">Living Room</div>
-                    <div class="end">Den</div>
-                </div>
-                <div class="actions">
-                    <div class="edit"></div>
-                    <div class="delete"></div>
-                </div>
-            </div>
-            <div class="pathLabel">
-                <div class="locations">
-                    <div class="start">Kitchen</div>
-                    <div class="end">Bedroom</div>
-                </div>
-                <div class="actions">
-                    <div class="edit"></div>
-                    <div class="delete"></div>
-                </div>
+            <div id="statusBar">
+                <div class="barTitle">MOBI STATUS</div>
+                <div class="battery">56%</div>
+                <div class="status idle"></div>
             </div>
         </div>
         <script type="text/javascript" src="./js/jquery.min.js"></script>
