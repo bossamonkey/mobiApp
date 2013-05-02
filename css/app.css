@@ -71,10 +71,20 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
   line-height: 40px;
 }
 
+#statusBar .location{
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 40px;
+}
+
 #statusBar .battery{
   position: absolute;
   top: 0;
-  right: 110px;
+  right: 100px;
   width: 50px;
   height: 40px;
   background: url('../img/status-bar-battery.png') center center no-repeat;
@@ -227,7 +237,7 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
 
 #content{
   position: relative;
-  top: 20px;
+  top: 15px;
   padding: 30px 15px 100px 15px;
 }
 
