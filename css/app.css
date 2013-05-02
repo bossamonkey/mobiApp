@@ -21,6 +21,10 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* ------------- TOP BAR -------------- */
 
 #topbar{
@@ -63,6 +67,7 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
   background: #666;
   color: #ccc;
   padding: 0 15px;
+  z-index: 200;
 }
 
 #statusBar .barTitle{
@@ -685,9 +690,114 @@ h1{
   font-weight: bold;
 }
 
-.setupText {
-  font-size: 16pt;
+/* ------------- SETUP -------------- */
+
+#content.setup {
+  font-size: 16px;
+  padding-top: 0px;
+  top: 0px;
 }
-.setupText.loading{
+
+#content.setup.loading {
   text-align: center;
+}
+
+#content.setup :not(.loader) img {
+  width: 75%;
+}
+
+#content.setup input {
+  width: 200px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* ------------- MANUAL DRIVE PAGE -------------- */
+
+/*.manual #topbar {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.manual #navBtn {
+  border: none;
+  box-shadow: none;
+}
+
+.manual #appTitle {
+  display: none;
+}*/
+
+#d-pad {
+  width: 200px;
+  height: 200px;
+  
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+#d-pad button {
+  background: none;
+  border-style: solid;
+  border-width: 40px;
+  width: 0px;
+  height: 0px;
+  padding: 0;
+  position: absolute;
+}
+#forward {
+  border-color: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+  left: 60px;
+  top: -40px;
+}
+#right {
+  border-color: transparent;
+  border-left-color: rgba(255, 255, 255, 0.8);
+  right: -40px;
+  top: 60px;
+}
+#back {
+  border-color: transparent;
+  border-top-color: rgba(255, 255, 255, 0.8);
+  left: 60px;
+  bottom: -40px;
+}
+#left {
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.8);
+  left: -40px;
+  top: 60px;
+}
+#forward:active { border-bottom-color: rgba(85, 171, 223, 0.8); }
+#right:active { border-left-color: rgba(85, 171, 223, 0.8); }
+#back:active { border-top-color: rgba(85, 171, 223, 0.8); }
+#left:active { border-right-color: rgba(85, 171, 223, 0.8); }
+
+#joystick {
+  border: 50px solid rgba(255, 255, 255, 0.8);
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+#joystick:active { border-color: rgba(85, 171, 223, 0.8); }
+
+#cameraFeed {
+  background-color: #666;
+  background-image: url('http://fourwallsandaroof.com/wp-content/uploads/2012/01/b-family-room-small.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
