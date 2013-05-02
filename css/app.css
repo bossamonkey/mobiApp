@@ -76,20 +76,10 @@ img {
   line-height: 40px;
 }
 
-#statusBar .location{
-  position: absolute;
-  top: 0;
-  left: 100px;
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-  line-height: 40px;
-}
-
 #statusBar .battery{
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 110px;
   width: 50px;
   height: 40px;
   background: url('../img/status-bar-battery.png') center center no-repeat;
@@ -242,7 +232,7 @@ img {
 
 #content{
   position: relative;
-  top: 15px;
+  top: 20px;
   padding: 30px 15px 100px 15px;
 }
 
@@ -724,6 +714,9 @@ h1{
 
 /* ------------- MANUAL DRIVE PAGE -------------- */
 
+.manual {
+  overflow: hidden;
+}
 /*.manual #topbar {
   background: none;
   border: none;
@@ -739,39 +732,18 @@ h1{
   display: none;
 }*/
 
-
-
-.manual #navBtn, #cameraFeed, #d-pad, #joystick{
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-/*.manual #menu{
-  top: -200%;
-}*/
-
-.manual #navBtn{
-  z-index: 100;
-  background-color: #94d0fa;
-  position: absolute;
-  left: 90%;
-}
-
 #d-pad {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   
   position: absolute;
-  top: 20px;
-  left: 20px
+  bottom: 20px;
+  left: 20px;
 }
 #d-pad button {
   background: none;
   border-style: solid;
-  border-width: 40px;
+  border-width: 22px;
   width: 0px;
   height: 0px;
   padding: 0;
@@ -780,26 +752,26 @@ h1{
 #forward {
   border-color: transparent;
   border-bottom-color: rgba(255, 255, 255, 0.8);
-  left: 60px;
-  top: -40px;
+  left: 28px;
+  top: -22px;
 }
 #right {
   border-color: transparent;
   border-left-color: rgba(255, 255, 255, 0.8);
-  right: -40px;
-  top: 60px;
+  right: -22px;
+  top: 28px;
 }
 #back {
   border-color: transparent;
   border-top-color: rgba(255, 255, 255, 0.8);
-  left: 60px;
-  bottom: -40px;
+  left: 28px;
+  bottom: -22px;
 }
 #left {
   border-color: transparent;
   border-right-color: rgba(255, 255, 255, 0.8);
-  left: -40px;
-  top: 60px;
+  left: -22px;
+  top: 28px;
 }
 #forward:active { border-bottom-color: rgba(85, 171, 223, 0.8); }
 #right:active { border-left-color: rgba(85, 171, 223, 0.8); }
@@ -807,15 +779,15 @@ h1{
 #left:active { border-right-color: rgba(85, 171, 223, 0.8); }
 
 #joystick {
-  border: 50px solid rgba(255, 255, 255, 0.8);
-  border-radius: 100px;
-  width: 100px;
-  height: 100px;
+  border: 25px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
 }
 #joystick:active { border-color: rgba(85, 171, 223, 0.8); }
 
@@ -823,14 +795,12 @@ h1{
   background-color: #666;
   background-image: url('http://fourwallsandaroof.com/wp-content/uploads/2012/01/b-family-room-small.jpg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  width: 200%;
-  height: 170%;
-  overflow: hidden;
+  background-size: 100%;
+  content: '';
+  width: 100%;
+  height: 100%;
   
   position: absolute;
-  top: -50%;
+  top: 0px;
   left: 0px;
-  right: 0px;
-  bottom: 0px;
 }
