@@ -34,6 +34,11 @@ function run(){
     $("#navBtn.menu").live("touch", function(){
         toggleMenu();
     });
+    $("#content").on("click", function(){
+        if (menuOpen){
+            toggleMenu();
+        }
+    })
 
     // BIND CURR LOC ACTIONS (navigate page)
     var navigateCurrBoxOpen = false;
@@ -49,6 +54,28 @@ function run(){
     $("#navigateCurrSelectionBox .item").live("touch", function(){
         hideNavigateCurrSelection();
     });
+
+
+
+    // landscape menu
+
+    // BIND MENU ACTIONS
+    var landscapeMenuOpen = false;
+    $(".manual #navBtn.menu").on("click", function(){
+        toggleLandscapeMenu();
+    });
+
+    $("#cameraWrapper").on("click", function(){
+        if (landscapeMenuOpen){
+            toggleLandscapeMenu();
+        }
+    })
+
+
+    // TOOLTIPS
+    $(".tooltip .closeBtn").on("click", function(){
+        $(".tooltip").slideUp(250);
+    })
 
 
     function togglePathsPanel(){
@@ -86,6 +113,16 @@ function run(){
         }
         else{
             $("#menu").animate({left:-230});
+        }
+    }
+
+    function toggleLandscapeMenu(){
+        landscapeMenuOpen = !landscapeMenuOpen;
+        if (landscapeMenuOpen){
+            $("#landscapeMenu").animate({top:70});
+        }
+        else{
+            $("#landscapeMenu").animate({top:-230});
         }
     }
 
