@@ -64,16 +64,28 @@ img {
   left: 0;
   right: 0;
   height: 40px;
-  background: #666;
+  background: ;
   color: #ccc;
   padding: 0 15px;
-  z-index: 200;
+  z-index: 50;
+
+  background: #666 url('../img/mobiIcon.png') 10px center no-repeat;
+  background-size: auto 70%;
+
 }
 
 #statusBar .barTitle{
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
+}
+
+#statusBar .location{
+  position: absolute;
+  right: 180px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #afddfd;
 }
 
 #statusBar .battery{
@@ -124,11 +136,12 @@ img {
   left: -230px;
 }
 
-#menu a, #menu a:hover, #menu a:visited, #menu a:active{
+#menu a, #menu a:hover, #menu a:visited, #menu a:active,
+#landscapeMenu a, #landscapeMenu a:hover, #landscapeMenu a:visited, #landscapeMenu a:active{
     color: #fff;
 }
 
-#menu .item{
+#menu .item, #landscapeMenu .item{
   display: block;
   padding: 10px 15px 10px 45px;
   margin: 20px 15px;
@@ -136,23 +149,23 @@ img {
   line-height: 36px;
 }
 
-#menu .item.navigate{
+#menu .item.navigate, #landscapeMenu .item.navigate{
   background: #3a3a3a url('../img/menu-navigate.png') 8px center no-repeat;
   background-size: auto 50%;
 }
-#menu .item.manual{
+#menu .item.manual, #landscapeMenu .item.manual{
   background: #3a3a3a url('../img/menu-drive.png') 10px center no-repeat;
   background-size: auto 45%;
 }
-#menu .item.training{
+#menu .item.training, #landscapeMenu .item.training{
   background: #3a3a3a url('../img/menu-training.png') 10px center no-repeat;
   background-size: auto 45%;
 }
-#menu .item.path{
+#menu .item.path, #landscapeMenu .item.path{
   background: #3a3a3a url('../img/menu-path.png') 10px center no-repeat;
   background-size: auto 45%;
 }
-#menu .item.settings{
+#menu .item.settings, #landscapeMenu .item.settings{
   background: #3a3a3a url('../img/menu-settings.png') 10px center no-repeat;
   background-size: auto 45%;
 }
@@ -247,6 +260,37 @@ h1{
   line-height: 30px;
   margin: 0;
 }
+
+/* ------------- TOOLTIPS ------------ */
+
+.tooltip{
+  padding: 1px 50px 1px 15px;
+  background: rba(0,0,0,0.4);
+  background: #fee690;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tooltip .closeBtn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: url('../img/close.png');
+  opacity: 0.7;
+}
+
+.manual .tooltip{
+  width: 70%;
+  top: 45%;
+  right: -20%;
+  position: absolute;
+  z-index: 99;
+}
+
 
 /* ------------- PATHS PANEL -------------- */
 
@@ -732,7 +776,7 @@ h1{
   display: none;
 }*/
 
-.manual #navBtn, #cameraFeed, #d-pad, #joystick{
+.manual #navBtn, #cameraFeed, #d-pad, #joystick, .manual .tooltip{
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -740,16 +784,27 @@ h1{
   transform: rotate(90deg);
 }
 
-/*.manual #menu{
-  top: -200%;
-}*/
+#landscapeMenu{
+  -webkit-transform: matrix(0, 1, -1, 0, 0, -200);
+
+  background: #333;
+  position: absolute;
+  top: -230px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.76);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,.76);
+  box-shadow: 0 0 20px rgba(0,0,0,.76);
+}
 
 
 .manual #navBtn{
   z-index: 100;
   background-color: #94d0fa;
   position: absolute;
-  left: 90%;
+  left: 87%;
 }
 
 #d-pad {
