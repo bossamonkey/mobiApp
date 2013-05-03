@@ -1,12 +1,17 @@
 body {
   background-color: #eee;
-  font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-  font-size:14px;
+  font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   color: #666;
-  width:100%;
-  height:100%;
-  margin:0px;
-  padding:0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  
+  /* disable text highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 a{
@@ -23,6 +28,10 @@ a.btn, a.btn:hover, a.btn:visited, a.btn:active{
 
 img {
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
 }
 
 /* ------------- TOP BAR -------------- */
@@ -131,7 +140,7 @@ img {
 #menu .item{
   display: block;
   padding: 10px 15px 10px 45px;
-  margin: 20px 15px;
+  margin: 15px;
   font-size: 18px;
   line-height: 36px;
 }
@@ -203,7 +212,7 @@ img {
 
 .btn.skip{
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 15px;
   right: 15px;
 }
@@ -699,11 +708,12 @@ h1{
 }
 
 #content.setup.loading {
-  text-align: center;
+  font-size: 18px;
+  margin-top: 160px;
 }
 
 #content.setup :not(.loader) img {
-  width: 75%;
+  width: 50%;
 }
 
 #content.setup input {
@@ -717,20 +727,6 @@ h1{
 .manual {
   overflow: hidden;
 }
-/*.manual #topbar {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-.manual #navBtn {
-  border: none;
-  box-shadow: none;
-}
-
-.manual #appTitle {
-  display: none;
-}*/
 
 .manual #navBtn, #cameraFeed, #d-pad, #joystick{
   -webkit-transform: rotate(90deg);
@@ -748,13 +744,15 @@ h1{
 .manual #navBtn{
   z-index: 100;
   background-color: #94d0fa;
+  border: none;
+  box-shadow: none;
   position: absolute;
-  left: 90%;
+  left: 88%;
 }
 
 #d-pad {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   
   position: absolute;
   top: 20px;
@@ -763,7 +761,7 @@ h1{
 #d-pad button {
   background: none;
   border-style: solid;
-  border-width: 22px;
+  border-width: 26px;
   width: 0px;
   height: 0px;
   padding: 0;
@@ -772,26 +770,26 @@ h1{
 #forward {
   border-color: transparent;
   border-bottom-color: rgba(255, 255, 255, 0.8);
-  left: 28px;
-  top: -22px;
+  left: 34px;
+  top: -26px;
 }
 #right {
   border-color: transparent;
   border-left-color: rgba(255, 255, 255, 0.8);
-  right: -22px;
-  top: 28px;
+  right: -26px;
+  top: 34px;
 }
 #back {
   border-color: transparent;
   border-top-color: rgba(255, 255, 255, 0.8);
-  left: 28px;
-  bottom: -22px;
+  left: 34px;
+  bottom: -26px;
 }
 #left {
   border-color: transparent;
   border-right-color: rgba(255, 255, 255, 0.8);
-  left: -22px;
-  top: 28px;
+  left: -26px;
+  top: 34px;
 }
 #forward:active { border-bottom-color: rgba(85, 171, 223, 0.8); }
 #right:active { border-left-color: rgba(85, 171, 223, 0.8); }
@@ -799,10 +797,10 @@ h1{
 #left:active { border-right-color: rgba(85, 171, 223, 0.8); }
 
 #joystick {
-  border: 25px solid rgba(255, 255, 255, 0.8);
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
+  border: 30px solid rgba(255, 255, 255, 0.8);
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   
   position: absolute;
