@@ -70,6 +70,11 @@ img {
   background: #666 url('../img/mobiIcon.png') 10px center no-repeat;
   background-size: auto 70%;
 
+-webkit-transition-: all 0.5s;
+-moz-transition-: all 0.5s;
+-ms-transition-: all 0.5s;
+-o-transition-: all 0.5s;
+transition-: all 0.5s;
 }
 
 #statusBar .barTitle {
@@ -79,7 +84,7 @@ img {
 
 #statusBar .location{
   position: absolute;
-  right: 180px;
+  right: 80px;
   line-height: 40px;
   font-weight: bold;
   color: #afddfd;
@@ -88,7 +93,7 @@ img {
 #statusBar .battery{
   position: absolute;
   top: 0;
-  right: 110px;
+  right: 15px;
   width: 50px;
   height: 40px;
   background: url("../img/status-bar-battery.png") center center no-repeat;
@@ -102,7 +107,7 @@ img {
 #statusBar .status {
   position: absolute;
   top: 0;
-  right: 15px;
+  left: 30px;
   width: 90px;
   height: 40px; }
 
@@ -262,8 +267,7 @@ h1 {
 
 .tooltip{
   padding: 1px 50px 1px 15px;
-  background: rba(0,0,0,0.4);
-  background: #fee690;
+  background: rgba(254,230,110,0.85);
   color: #333;
   font-size: 16px;
   margin-bottom: 20px;
