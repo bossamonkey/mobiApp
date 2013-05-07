@@ -2,7 +2,7 @@ var socket;
 var paper;
 var mobi;
 
-var server = "192.168.1.113:8181"
+var server = "128.237.120.197:8181"
 
 // Add function to invert Y-axis in elements
 // Raphael.el.invert = function() {
@@ -243,8 +243,8 @@ function toJSONObject(obj){
 
 
 $(document).ready(function () {
-    keyListeners(this);
-    var host = "ws://" + server + "/control-command";
+
+    var host = "ws://" + server + "/motion-command";
     
     try {
         socket = new WebSocket(host);
@@ -359,10 +359,29 @@ function sendMotionCommand(socket){
                 }
             }
         }
-        if(!moving){
+
+        console.log(moving);
+        if(moving){
+
+            socket.send(JSON.stringify(data));
+            console.log(data);
+        }
+        else{
+            data = {
+                    "x":0.0,
+                    "y":0.0,
+                    "x_vel":0.0,
+                    "y_vel":0.0,
+                    "x_acc":0.0,
+                    "y_acc":0.0,
+                    "roll":0.0,
+                    "pitch":0.0,
+                    "yaw":0.0
+                };
+            console.log(data);
+            socket.send(JSON.stringify(data));
             clearInterval(socketCommand);
         }
-    console.log(data);
     }, 50);
 
 
