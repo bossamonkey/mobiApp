@@ -13,22 +13,28 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a, a:hover, a:visited, a:active {
-  color: #666; }
+  color: #666;
+}
 
 a.btn, a.btn:hover, a.btn:visited, a.btn:active {
-  color: #fff; }
+  color: #fff;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
 /* ------------- TOP BAR -------------- */
 #topbar {
@@ -46,14 +52,16 @@ img {
   background-image: -moz-linear-gradient(bottom, #3ba4e0, #75bdf5);
   background-image: -o-linear-gradient(bottom, #3ba4e0, #75bdf5);
   background-image: -ms-linear-gradient(bottom, #3ba4e0, #75bdf5);
-  background-image: linear-gradient(to top, #3ba4e0, #75bdf5); }
+  background-image: linear-gradient(to top, #3ba4e0, #75bdf5);
+}
 
 #appTitle {
   font-size: 30px;
   color: #fff;
   line-height: 50px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+}
 
 /* ------------- STATUS BAR -------------- */
 #statusBar {
@@ -70,17 +78,18 @@ img {
   background: #666 url('../img/mobiIcon.png') 10px center no-repeat;
   background-size: auto 70%;
 
--webkit-transition-: all 0.5s;
--moz-transition-: all 0.5s;
--ms-transition-: all 0.5s;
--o-transition-: all 0.5s;
-transition-: all 0.5s;
+  -webkit-transition-: all 0.5s;
+  -moz-transition-: all 0.5s;
+  -ms-transition-: all 0.5s;
+  -o-transition-: all 0.5s;
+  transition-: all 0.5s;
 }
 
 #statusBar .barTitle {
   font-size: 16px;
   font-weight: bold;
-  line-height: 40px; }
+  line-height: 40px;
+}
 
 #statusBar .location{
   position: absolute;
@@ -102,22 +111,26 @@ transition-: all 0.5s;
   font-weight: normal;
   font-size: 12px;
   line-height: 40px;
-  color: #fff; }
+  color: #fff;
+}
 
 #statusBar .status {
   position: absolute;
   top: 0;
   left: 30px;
   width: 90px;
-  height: 40px; }
+  height: 40px;
+}
 
 #statusBar .status.idle {
   background: url("../img/status-idle.png") center center no-repeat;
-  background-size: auto 60%; }
+  background-size: auto 60%;
+}
 
 #statusBar .status.moving {
   background: url("../img/status-moving.png") center center no-repeat;
-  background-size: auto 60%; }
+  background-size: auto 60%;
+}
 
 /* ------------- MENU -------------- */
 #menu {
@@ -131,7 +144,8 @@ transition-: all 0.5s;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
-  left: -230px; }
+  left: -230px;
+}
 
 
 #menu a, #menu a:hover, #menu a:visited, #menu a:active,
@@ -171,23 +185,28 @@ transition-: all 0.5s;
 
 #menu .item.navigate {
   background: #3a3a3a url("../img/menu-navigate.png") 8px center no-repeat;
-  background-size: auto 50%; }
+  background-size: auto 50%;
+}
 
 #menu .item.manual {
   background: #3a3a3a url("../img/menu-drive.png") 10px center no-repeat;
-  background-size: auto 45%; }
+  background-size: auto 45%;
+}
 
 #menu .item.training {
   background: #3a3a3a url("../img/menu-training.png") 10px center no-repeat;
-  background-size: auto 45%; }
+  background-size: auto 45%;
+}
 
 #menu .item.path {
   background: #3a3a3a url("../img/menu-path.png") 10px center no-repeat;
-  background-size: auto 45%; }
+  background-size: auto 45%;
+}
 
 #menu .item.settings {
   background: #3a3a3a url("../img/menu-settings.png") 10px center no-repeat;
-  background-size: auto 45%; }
+  background-size: auto 45%;
+}
 
 /* ------------- BUTTONS -------------- */
 .btn {
@@ -203,32 +222,39 @@ transition-: all 0.5s;
   border-radius: 7px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.27);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.27);
+}
 
 .btn a, .btn a:visited, .btn a:hover, .btn a:active {
-  color: #fff; }
+  color: #fff;
+}
 
 .btn.green {
   border: solid 1px #137a09;
-  background-color: #5dc752; }
+  background-color: #5dc752;
+}
 
 .btn.gray {
   border: solid 1px #333;
-  background-color: #444; }
+  background-color: #444;
+}
 
 .btn.ltgray {
   border: solid 1px #666;
-  background-color: #888; }
+  background-color: #888;
+}
 
 .btn.yellow {
   border: solid 1px #ad9005;
-  background-color: #dbbe33; }
+  background-color: #dbbe33;
+}
 
 .btn.skip {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  right: 15px; }
+  right: 15px;
+}
 
 #navBtn {
   width: 30px;
@@ -237,31 +263,37 @@ transition-: all 0.5s;
   left: 10px;
   top: 9px;
   background-color: #94d0fa;
-  padding: 0; }
+  padding: 0;
+}
 
 #navBtn.menu {
   background: url("../img/menu-icon.png") center center no-repeat;
-  background-size: 70% 70%; }
+  background-size: 70% 70%;
+}
 
 #navBtn.back {
   background: url("../img/back-icon.png") center center no-repeat;
-  background-size: 70% 70%; }
+  background-size: 70% 70%;
+}
 
 /* ------------- PAGE CONTENT -------------- */
 #content {
   position: relative;
   top: 20px;
-  padding: 30px 15px 100px 15px; }
+  padding: 30px 15px 100px 15px;
+}
 
 .centerWrapper {
-  text-align: center; }
+  text-align: center;
+}
 
 h1 {
   font-size: 16px;
   font-weight: bold;
   color: #2ba3ea;
   line-height: 30px;
-  margin: 0; }
+  margin: 0;
+}
 
 /* ------------- TOOLTIPS ------------ */
 
@@ -298,15 +330,18 @@ h1 {
   position: absolute;
   width: 100%;
   z-index: 20;
-  -webkit-transition: all 0.5s; }
+  -webkit-transition: all 0.5s;
+}
 
 #pathsPanel.collapsed {
   top: -260px;
-  -webkit-transition: all 0.5s; }
+  -webkit-transition: all 0.5s;
+}
 
 #pathsPanel.expanded {
   top: 45px;
-  -webkit-transition: all 0.5s; }
+  -webkit-transition: all 0.5s;
+}
 
 #pathsPanel .body {
   position: relative;
@@ -314,7 +349,8 @@ h1 {
   left: 2%;
   height: 320px;
   background: #666;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 #pathsPanel .tab {
   position: relative;
@@ -329,7 +365,8 @@ h1 {
   padding-top: 10px;
   top: -15px;
   border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px; }
+  border-bottom-left-radius: 15px;
+}
 
 #pathsFrame {
   position: relative;
@@ -338,26 +375,32 @@ h1 {
   left: 5%;
   top: 15px;
   border: none;
-  background: #666; }
+  background: #666;
+}
 
 .pathsFrameInner {
   background: #666;
   color: #fff;
-  height: 100%; }
+  height: 100%;
+}
 
 .pathsFrameInner .pathLabel, .pathsFrameInner .selector {
-  color: #666; }
+  color: #666;
+}
 
 .pathsFrameInner h1 {
-  color: #64b6ef; }
+  color: #64b6ef;
+}
 
 /* NEW PATH */
 #newPathForm {
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 #newPathForm .controlGroup {
   overflow: auto;
-  width: 100%; }
+  width: 100%;
+}
 
 #newPathForm .controlGroup .label {
   float: left;
@@ -365,43 +408,51 @@ h1 {
   text-align: right;
   font-size: 16px;
   font-weight: bold;
-  line-height: 40px; }
+  line-height: 40px;
+}
 
 #newPathForm .controlGroup.withHint .label {
-  line-height: 80px; }
+  line-height: 80px;
+}
 
 #newPathForm .controlGroup .hint {
   position: relative;
   left: 15px;
   font-size: 11px;
   font-weight: bold;
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+}
 
 #newPathForm .input {
   position: relative;
   float: left;
   left: 10px;
-  width: 150px; }
+  width: 150px;
+}
 
 #newPathForm .input input {
   width: 182px;
   font-size: 20px;
   line-height: 35px;
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
 #newPathForm .existingLocs {
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 #newPathForm .existingLocs .label {
   font-size: 11px;
   font-weight: bold;
   color: #64b6ef;
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+}
 
 #newPathForm .existingLocs .locsList {
   overflow: auto;
-  width: 100%; }
+  width: 100%;
+}
 
 #newPathForm .existingLocs .locsList .item {
   width: 44%;
@@ -410,22 +461,26 @@ h1 {
   color: #fff;
   line-height: 30px;
   padding: 0 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 /*#newPathForm .existingLocs .locsList .item:nth-child(odd){
   margin-right: 5%;
 }*/
 #newPathForm .existingLocs .locsList .item:nth-child(even) {
-  float: right; }
+  float: right;
+}
 
 .finishingActions {
   float: right;
   margin-top: 10px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 .finishingActions .btn {
   float: right;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
 /* RECORDING PATH */
 #pushLabel {
@@ -433,7 +488,8 @@ h1 {
   height: 250px;
   background: url("../img/push.png") no-repeat;
   background-size: 100% auto;
-  position: relative; }
+  position: relative;
+}
 
 #pushLabel p {
   position: absolute;
@@ -442,39 +498,46 @@ h1 {
   width: 130px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff; }
+  color: #fff;
+}
 
 #pushLabel .finishingActions {
   position: absolute;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+}
 
 #timer {
   position: absolute;
   bottom: 0;
   left: 25px;
-  font-size: 34px; }
+  font-size: 34px;
+}
 
 /* ------------- NAVIGATE PAGE -------------- */
 .navigate#content {
   padding-top: 55px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 .navigate .currLoc {
   background: #ccc;
   padding: 10px 15px;
   height: 42px;
-  margin-bottom: -5px; }
+  margin-bottom: -5px;
+}
 
 .navigate .currLoc .label {
   float: left;
   font-size: 15px;
   font-weight: bold;
-  line-height: 42px; }
+  line-height: 42px;
+}
 
 .innerContent {
-  padding: 0px 15px 0px 15px; }
+  padding: 0px 15px 0px 15px;
+}
 
 .destinationList .item {
   background: #fff;
@@ -482,27 +545,33 @@ h1 {
   margin-bottom: 15px;
   padding: 5px 15px;
   font-size: 18px;
-  line-height: 40px; }
+  line-height: 40px;
+}
 
 .destinationList .item:nth-child(odd) {
-  float: left; }
+  float: left;
+}
 
 .destinationList .item:nth-child(even) {
-  float: right; }
+  float: right;
+}
 
 /*.navigate .centerWrapper{
   margin-bottom: 30px;
 }*/
 .titleRow {
   overflow: auto;
-  width: 100%; }
+  width: 100%;
+}
 
 .titleRow .pageTitle {
-  float: left; }
+  float: left;
+}
 
 .titleRow .actions {
   float: right;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 /*.sort{
   float: right;
@@ -519,7 +588,8 @@ h1 {
   margin-left: 6px;
   border: 1px solid #ddd;
   font-size: 20px;
-  line-height: 40px; }
+  line-height: 40px;
+}
 
 #sortSelectionBox, #navigateCurrSelectionBox, #newPathSelectionBox {
   clear: both;
@@ -534,13 +604,16 @@ h1 {
   display: none;
   font-size: 20px;
   width: 150px;
-  float: right; }
+  float: right;
+}
 
 .pathList.withEdit {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .pathList .pathLabel {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .pathLabel {
   position: relative;
@@ -551,18 +624,22 @@ h1 {
   height: 50px;
   background: white url("../img/path-arrow.png") center center no-repeat;
   background-size: auto 45%;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+}
 
 .pathLabel.loop {
   background: white url("../img/path-arrow-loop.png") center center no-repeat;
-  background-size: auto 45%; }
+  background-size: auto 45%;
+}
 
 .pathLabel.double {
   background: white url("../img/path-double-arrow.png") center center no-repeat;
-  background-size: auto 30%; }
+  background-size: auto 30%;
+}
 
 .withEdit .pathLabel {
-  background: #fff; }
+  background: #fff;
+}
 
 .withEdit .pathLabel .locations {
   width: 75%;
@@ -570,44 +647,52 @@ h1 {
   float: left;
   background: white url("../img/path-double-arrow.png") 55% center no-repeat;
   font-size: 16px;
-  background-size: auto 25%; }
+  background-size: auto 25%;
+}
 
 .withEdit .pathLabel .locations .end {
-  left: 47%; }
+  left: 47%;
+}
 
 .withEdit .actions {
   float: left;
   width: 25%;
   height: 50px;
-  left: -10px; }
+  left: -10px;
+}
 
 .withEdit .actions .edit {
   float: left;
   width: 50%;
   height: 100%;
   background: url("../img/edit-btn.png") center center no-repeat;
-  background-size: 70%; }
+  background-size: 70%;
+}
 
 .withEdit .actions .delete {
   float: left;
   width: 50%;
   height: 100%;
   background: url("../img/delete-btn.png") center center no-repeat;
-  background-size: 70%; }
+  background-size: 70%;
+}
 
 .pathLabel .start {
-  position: absolute; }
+  position: absolute;
+}
 
 .pathLabel .end {
   position: absolute;
-  left: 60%; }
+  left: 60%;
+}
 
 #loop {
   clear: both;
   margin-top: 20px;
   height: 40px;
   width: 150px;
-  float: right; }
+  float: right;
+}
 
 .loopBtn {
   float: right;
@@ -615,46 +700,56 @@ h1 {
   height: 40px;
   background: url("../img/loop.png") no-repeat;
   background-size: 100% auto;
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
 #loop.on .loopBtn {
   background: url("../img/loop-active.png") no-repeat;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+}
 
 #loop.on p {
   color: #2ba3ea;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 #loop p {
   float: right;
   line-height: 40px;
   position: relative;
   top: -15px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 #navigatePause {
-  display: none; }
+  display: none;
+}
 
 /* NAVIGATING */
 .navigateActions {
   clear: both;
-  height: 30px; }
+  height: 30px;
+}
 
 .navigateActions .label {
   float: left;
   line-height: 30px;
   margin-top: 10px;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .navigateActions.finished {
-  display: none; }
+  display: none;
+}
 
 .navigateActions.finished .label {
   color: #2f9801;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .navigateActions.finished .btn {
-  float: right; }
+  float: right;
+}
 
 .pathLabel .progress {
   position: absolute;
@@ -662,13 +757,16 @@ h1 {
   height: 100%;
   background-color: #3da5e1;
   margin-left: -10px;
-  opacity: 0.3; }
+  opacity: 0.3;
+}
 
 .pathLabel.reverse .progress {
-  right: 0; }
+  right: 0;
+}
 
 #timeLeft {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* ------------- SETUP -------------- */
 #content.setup {
@@ -687,15 +785,26 @@ h1 {
   margin-top: 160px; }
 
 /* ------------- MANUAL DRIVE PAGE -------------- */
+
+/*$control-normal: rgba(255, 255, 255, 0.8);
+$control-active: rgba(85, 171, 223, 0.8);
+
+$d-pad-width: 120px;
+$d-pad-btn-width: 26px;
+$d-pad-btn-offset: $d-pad-width/2 - $d-pad-btn-width;
+$wheel-width: $d-pad-width/2;*/
+
 .manual {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .manual #navBtn, #cameraFeed, #d-pad, #joystick, .manual .tooltip{
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+}
 
 #landscapeMenu{
   -webkit-transform: matrix(0, 1, -1, 0, 0, -200);
@@ -779,7 +888,8 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: absolute; }
+  position: absolute;
+}
 
 #cameraFeed {
   background-color: #666;
@@ -792,4 +902,44 @@ h1 {
   top: -50%;
   /*  position: absolute;
     top: 0px;
-    left: 0px;*/ }
+    left: 0px;*/
+}
+
+/* ------------- TUTORIALS -------------- */
+
+#content.tutorial {
+  z-index: 50;
+}
+  #content.tutorial h1, #content.tutorial p {
+    width: 78%;
+    margin: 1.5em auto;
+  }
+  #content.tutorial h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  #content.tutorial .arrow {
+    display: inline-block;
+    width: 17px;
+    height: 32px;
+    position: absolute;
+    top: 58px;
+  }
+  #content.tutorial .prev {
+    background: url('../img/prev.png') no-repeat;
+    left: 12px;
+  }
+  #content.tutorial .next {
+    background: url('../img/next.png') no-repeat;
+    right: 12px;
+  }
+
+#tutorialImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
