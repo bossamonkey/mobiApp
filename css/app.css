@@ -784,6 +784,22 @@ h1 {
   font-size: 18px;
   margin-top: 160px; }
 
+#content .arrow {
+  display: inline-block;
+  width: 17px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+}
+#content .arrow.prev {
+  background: url('../img/prev.png') no-repeat;
+  left: 12px;
+}
+#content .arrow.next {
+  background: url('../img/next.png') no-repeat;
+  right: 12px;
+}
+
 /* ------------- MANUAL DRIVE PAGE -------------- */
 
 /*$control-normal: rgba(255, 255, 255, 0.8);
@@ -908,11 +924,14 @@ $wheel-width: $d-pad-width/2;*/
 /* ------------- TUTORIALS -------------- */
 
 #content.tutorial {
+  background: rgba(220, 220, 220, 0.8);
+  height: 70px !important;
+  padding-bottom: 0px;
   z-index: 50;
 }
   #content.tutorial h1, #content.tutorial p {
     width: 78%;
-    margin: 1.5em auto;
+    margin: 1em auto;
   }
   #content.tutorial h1 {
     font-size: 36px;
@@ -920,21 +939,9 @@ $wheel-width: $d-pad-width/2;*/
     margin-top: 1em;
     margin-bottom: 0;
   }
-  #content.tutorial .arrow {
-    display: inline-block;
-    width: 17px;
-    height: 32px;
-    position: absolute;
-    top: 58px;
-  }
-  #content.tutorial .prev {
-    background: url('../img/prev.png') no-repeat;
-    left: 12px;
-  }
-  #content.tutorial .next {
-    background: url('../img/next.png') no-repeat;
-    right: 12px;
-  }
+#content.tutorial.titlePage {
+  height: 380px !important;
+}
 
 #tutorialImg {
   width: 100%;
