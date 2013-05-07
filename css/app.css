@@ -356,7 +356,7 @@ h1 {
   margin-top: 10px; }
 
 #newPathForm .controlGroup {
-  overflow: auto;
+  overflow: hidden;
   width: 100%; }
 
 #newPathForm .controlGroup .label {
