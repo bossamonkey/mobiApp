@@ -2,38 +2,49 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
         <title>mObi</title>
     </head>
-    <body>
+    <body ontouchstart>
         <div id="container" class="manual">
-            <div id="topbar">
-                <a id="navBtn" class="menu btn"></a>
+
+            <a id="navBtn" class="back btn" href="index.html"></a>
+            
+<!--             <div id="topbar">
+                
                 <div id="appTitle">mObi</div>
-            </div>
-            <div id="menu">
+            </div> -->
+            <div id="landscapeMenu">
                 <a href="index.html" class="item navigate">Navigate</a>
                 <a href="paths.html" class="item path">Path Settings</a>
                 <a href="manual.html" class="item manual">Manual Drive</a>
                 <a href="tutorials.html" class="item training">Tutorials</a>
-                <a href="setupStep1.html" class="item settings">Preferences</a>
+                <a href="preferences.html" class="item settings">Preferences</a>
             </div>
-            <div id="statusBar">
+<!--             <div id="statusBar">
                 <div class="barTitle">MOBI STATUS</div>
                 <div class="battery">56%</div>
                 <div class="status idle"></div>
+            </div> -->
+            <div class="tooltip">
+                <div class="closeBtn"></div>
+                <p>Use the directional pads and joystick to drive mObi around.</p>
+            </div>
+            <div id="cameraWrapper">
+                <div id="cameraFeed"></div>
             </div>
         </div>
-        <div id="cameraFeed">
-        </div>
+        
         <div id="d-pad">
-          <button id="forward" />
-          <button id="right" />
-          <button id="back" />
-          <button id="left" />
+          <button class="arrow_key" id="forward" />
+          <button class="arrow_key" id="right" />
+          <button class="arrow_key" id="back" />
+          <button class="arrow_key" id="left" />
         </div>
-        <div id="joystick">
+        <div id="wheel">
         </div>
         <script type="text/javascript" src="./js/jquery.min.js"></script>
         <script type="text/javascript" src="./js/app.js"></script>
+        <script type="text/javascript" src="./js/mobi.js"></script>
     </body>
 </html>
