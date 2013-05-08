@@ -950,3 +950,77 @@ $wheel-width: $d-pad-width/2;*/
   bottom: 20px;
   left: 0px;
 }
+
+/* ------------- PREFERENCES -------------- */
+
+/* also used in tutorials */
+.listItem {
+  background: #fff;
+  clear: both;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: 15px 0px;
+  padding: 0px 10px;
+}
+.listItem span {
+  display: inline-block;
+}
+
+.onoffswitch {
+  float: right;
+  margin: 8px 0px;
+  position: relative; width: 80px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  width: 200%; margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #75bdf5; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE; color: #999999;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  width: 18px; margin: 6px;
+  background: #FFFFFF;
+  border: 2px solid #999999; border-radius: 20px;
+  position: absolute; top: 0; bottom: 0; right: 46px;
+  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}
