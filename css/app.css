@@ -208,6 +208,10 @@ img {
   background-size: auto 45%;
 }
 
+#menu .item.current {
+  background-color: #666;
+}
+
 /* ------------- BUTTONS -------------- */
 .btn {
   background-color: #64b6ef;
@@ -247,13 +251,6 @@ img {
 .btn.yellow {
   border: solid 1px #ad9005;
   background-color: #dbbe33;
-}
-
-.btn.skip {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
 }
 
 #navBtn {
@@ -772,33 +769,39 @@ h1 {
 #content.setup {
   font-size: 16px;
   padding-top: 0px;
-  top: 0px; }
-  #content.setup :not(.loader) img {
-    width: 50%; }
-  #content.setup input {
+  top: 0px;
+}
+  .setup :not(.loader) img {
+    width: 50%;
+  }
+  .setup input {
     width: 200px;
     font-size: 16px;
-    line-height: 30px; }
+    line-height: 30px;
+  }
+  .setup a.btn {
+    display: block;
+    margin: 1em auto;
+  }
 
 #content.setup.loading {
   font-size: 18px;
-  margin-top: 160px; }
+  margin-top: 160px;
+}
 
-#content .arrow {
-  display: inline-block;
-  width: 17px;
-  height: 32px;
+.skip {
   position: absolute;
-  top: 50%;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
 }
-#content .arrow.prev {
-  background: url('../img/prev.png') no-repeat;
-  left: 12px;
+.skip a {
+  color: #1b76b5;
+  display: inline-block;
 }
-#content .arrow.next {
-  background: url('../img/next.png') no-repeat;
-  right: 12px;
-}
+.skip a.left { float: left; }
+.skip a.right { float: right; }
+
 
 /* ------------- MANUAL DRIVE PAGE -------------- */
 
@@ -924,7 +927,8 @@ $wheel-width: $d-pad-width/2;*/
 /* ------------- TUTORIALS -------------- */
 
 #content.tutorial {
-  background: rgba(220, 220, 220, 0.8);
+  /*background: rgba(220, 220, 220, 0.8);*/
+  background: rgba(170, 230, 230, 0.85);
   height: 70px !important;
   padding-bottom: 0px;
   z-index: 50;
@@ -949,6 +953,22 @@ $wheel-width: $d-pad-width/2;*/
   position: absolute;
   bottom: 20px;
   left: 0px;
+}
+
+.tutorial .arrow {
+  display: inline-block;
+  width: 17px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+}
+.tutorial .arrow.prev {
+  background: url('../img/prev.png') no-repeat;
+  left: 12px;
+}
+.tutorial .arrow.next {
+  background: url('../img/next.png') no-repeat;
+  right: 12px;
 }
 
 /* ------------- PREFERENCES -------------- */
