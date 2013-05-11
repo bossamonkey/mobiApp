@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #bbb;
   font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #666;
@@ -445,7 +445,7 @@ h1 {
 #newPathForm .existingLocs .label {
   font-size: 11px;
   font-weight: bold;
-  color: #64b6ef;
+  color: #2ba3ea;
   margin-bottom: 2px;
 }
 
@@ -522,7 +522,7 @@ h1 {
 }
 
 .navigate .currLoc {
-  background: #ccc;
+  background: #aaa;
   padding: 10px 15px;
   height: 42px;
   margin-bottom: -5px;
@@ -755,9 +755,9 @@ h1 {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: #3da5e1;
+  background-color: #4d9cca;
   margin-left: -10px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .pathLabel.reverse .progress {
