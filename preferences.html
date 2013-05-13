@@ -16,10 +16,30 @@
                 <a href="paths.html" class="item path">Path Settings</a>
                 <a href="manual.html" class="item manual">Manual Drive</a>
                 <a href="tutorials.html" class="item training">Tutorials</a>
-                <a href="preferences.html" class="item settings">Preferences</a>
+                <a href="preferences.html" class="item settings current">Preferences</a>
             </div>
             <div id="content">
-                <p><a href="setupStep1.html">Setup Tutorial</a></p>
+                <div class="listItem">
+                  <span>Help messages</span>
+                  <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="helpMessagesCheckbox" checked>
+                      <label class="onoffswitch-label" for="helpMessagesCheckbox">
+                          <div class="onoffswitch-inner"></div>
+                          <div class="onoffswitch-switch"></div>
+                      </label>
+                  </div>
+                </div>
+                <div class="listItem">
+                  <span>Manual drive to set paths</span>
+                  <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="manualDriveCheckbox">
+                      <label class="onoffswitch-label" for="manualDriveCheckbox">
+                          <div class="onoffswitch-inner"></div>
+                          <div class="onoffswitch-switch"></div>
+                      </label>
+                  </div>
+                </div>
+                <a href="setupStep1.html" class="listItem">Setup Wizard</a>
             </div>
             <div id="statusBar">
                 <div class="location">KITCHEN</div>
